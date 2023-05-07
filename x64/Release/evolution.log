@@ -1,0 +1,9 @@
+﻿  game.cpp
+D:\ZSYblah\Documents\Codes\INFOMOV\game.cpp(109,51): warning C4244: “=”: 从“unsigned long”转换到“unsigned short”，可能丢失数据
+D:\ZSYblah\Documents\Codes\INFOMOV\game.cpp(146,47): warning C4244: “=”: 从“unsigned long”转换到“unsigned short”，可能丢失数据
+D:\ZSYblah\Documents\Codes\INFOMOV\game.cpp(288,14): warning C4477: “sprintf”: 格式字符串“%i”需要类型“int”的参数，但可变参数 1 拥有了类型“__int64”
+D:\ZSYblah\Documents\Codes\INFOMOV\game.cpp(288,14): message : 请考虑在格式字符串中使用“%lli”
+D:\ZSYblah\Documents\Codes\INFOMOV\game.cpp(288,14): message : 请考虑在格式字符串中使用“%Ii”
+D:\ZSYblah\Documents\Codes\INFOMOV\game.cpp(288,14): message : 请考虑在格式字符串中使用“%I64i”
+    正在创建库 D:\ZSYblah\Documents\Codes\INFOMOV\x64\myGame.lib 和对象 D:\ZSYblah\Documents\Codes\INFOMOV\x64\myGame.exp
+  evolution.vcxproj -> D:\ZSYblah\Documents\Codes\INFOMOV\x64\myGame.exe

@@ -16,6 +16,8 @@ Surface* reference, *backup;								// surfaces
 int* ref8;													// grayscale image for evaluation
 Timer tm;													// stopwatch
 
+double grayTable[256];
+
 // -----------------------------------------------------------
 // Mutate
 // Randomly modify or replace one line.
@@ -95,10 +97,8 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
     /* Line is not horizontal, diagonal, or vertical */
     unsigned short ErrorAcc = 0;  /* initialize the line error accumulator to 0 */
     
-    BYTE rl = GetRValue( clrLine );
-    BYTE gl = GetGValue( clrLine );
-    BYTE bl = GetBValue( clrLine );
-    double grayl = rl * 0.299 + gl * 0.587 + bl * 0.114;
+    BYTE l = GetRValue( clrLine );
+    double grayl = grayTable[l];
     
     /* Is this an X-major or Y-major line? */
     if (DeltaY > DeltaX)
@@ -122,26 +122,18 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
             Weighting = ErrorAcc >> 8;
             
             COLORREF clrBackGround = screen->pixels[X0 + Y0 * SCRWIDTH];
-            BYTE rb = GetRValue( clrBackGround );
-            BYTE gb = GetGValue( clrBackGround );
-            BYTE bb = GetBValue( clrBackGround );
-            double grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+            BYTE b = GetRValue( clrBackGround );
+            double grayb = grayTable[b];
             
-            BYTE rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rl - rb ) + rb ) ) );
-            BYTE gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gl - gb ) + gb ) ) );
-            BYTE br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bl - bb ) + bb ) ) );
-            screen->Plot( X0, Y0, RGB( rr, gr, br ) );
+            BYTE r = ( b > l ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( b - l ) + l ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( l - b ) + b ) ) );
+            screen->Plot( X0, Y0, RGB( r, r, r ) );
             
             clrBackGround = screen->pixels[X0 + XDir + Y0 * SCRWIDTH];
-            rb = GetRValue( clrBackGround );
-            gb = GetGValue( clrBackGround );
-            bb = GetBValue( clrBackGround );
-            grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+            b = GetRValue( clrBackGround );
+            grayb = grayTable[b];
             
-            rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rl - rb ) + rb ) ) );
-            gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gl - gb ) + gb ) ) );
-            br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bl - bb ) + bb ) ) );
-            screen->Plot( X0 + XDir, Y0, RGB( rr, gr, br ) );
+            r = ( b > l ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( b - l ) + l ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( l - b ) + b ) ) );
+            screen->Plot( X0 + XDir, Y0, RGB( r, r, r ) );
         }
         /* Draw the final pixel, which is always exactly intersected by the line
         and so needs no weighting */
@@ -167,28 +159,20 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
         Weighting = ErrorAcc >> 8;
         
         COLORREF clrBackGround = screen->pixels[X0 + Y0 * SCRWIDTH];
-        BYTE rb = GetRValue( clrBackGround );
-        BYTE gb = GetGValue( clrBackGround );
-        BYTE bb = GetBValue( clrBackGround );
-        double grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+        BYTE b = GetRValue( clrBackGround );
+        double grayb = grayTable[b];
         
-        BYTE rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rl - rb ) + rb ) ) );
-        BYTE gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gl - gb ) + gb ) ) );
-        BYTE br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bl - bb ) + bb ) ) );
+        BYTE r = ( b > l ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( b - l ) + l ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( l - b ) + b ) ) );
         
-        screen->Plot( X0, Y0, RGB( rr, gr, br ) );
+        screen->Plot( X0, Y0, RGB( r, r, r ) );
         
         clrBackGround = screen->pixels[X0 + (Y0 + 1 )* SCRWIDTH];
-        rb = GetRValue( clrBackGround );
-        gb = GetGValue( clrBackGround );
-        bb = GetBValue( clrBackGround );
-        grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+        b = GetRValue( clrBackGround );
+        grayb = grayTable[b];
         
-        rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rl - rb ) + rb ) ) );
-        gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gl - gb ) + gb ) ) );
-        br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bl - bb ) + bb ) ) );
+        r = ( b > l ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( b - l ) + l ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( l - b ) + b ) ) );
         
-        screen->Plot( X0, Y0 + 1, RGB( rr, gr, br ) );
+        screen->Plot( X0, Y0 + 1, RGB( r, r, r ) );
     }
     
     /* Draw the final pixel, which is always exactly intersected by the line
@@ -229,6 +213,9 @@ __int64 Game::Evaluate()
 // -----------------------------------------------------------
 void Game::Init()
 {
+    double gray_coeff = 0.299 + 0.587 + 0.114;
+    for (int i = 0; i < 256; i++) grayTable[i] = i * gray_coeff;
+
 	for (int i = 0; i < LINES; i++) MutateLine( i );
 	FILE* f = fopen( LINEFILE, "rb" );
 	if (f)
@@ -290,7 +277,7 @@ void Game::Tick( float _DT )
 		__int64 diff = Evaluate();
 		if (diff < fitness) fitness = diff; else 
 		UndoMutation( lidx );
-		// lidx = (lidx + 1) % LINES;
+		lidx = (lidx + 1) % LINES;
 		iterCount++;
 	}
 	// stats
