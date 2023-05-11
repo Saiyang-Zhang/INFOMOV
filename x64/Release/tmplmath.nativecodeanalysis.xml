@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\ZSYblah\Documents\Codes\INFOMOV\template\</FILEPATH>
+      <FILENAME>tmplmath.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 Tmpl8::float4::&lt;unnamed-tag&gt;::cell。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>Tmpl8::float4::{ctor}</FUNCTION>
+    <DECORATED>??0float4@Tmpl8@@QEAA@AEBUfloat3@1@M@Z</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Tmpl8::float4::&lt;unnamed-tag&gt;::cell</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\ZSYblah\Documents\Codes\INFOMOV\template\</FILEPATH>
+      <FILENAME>tmplmath.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 Tmpl8::float4::&lt;unnamed-tag&gt;::cell。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>Tmpl8::float4::{ctor}</FUNCTION>
+    <DECORATED>??0float4@Tmpl8@@QEAA@AEBUfloat3@1@@Z</DECORATED>
+    <FUNCLINE>98</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Tmpl8::float4::&lt;unnamed-tag&gt;::cell</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\ZSYblah\Documents\Codes\INFOMOV\template\</FILEPATH>
+      <FILENAME>tmplmath.cpp</FILENAME>
+      <LINE>103</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 Tmpl8::int4::&lt;unnamed-tag&gt;::cell。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>Tmpl8::int4::{ctor}</FUNCTION>
+    <DECORATED>??0int4@Tmpl8@@QEAA@AEBUint3@1@H@Z</DECORATED>
+    <FUNCLINE>103</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Tmpl8::int4::&lt;unnamed-tag&gt;::cell</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\ZSYblah\Documents\Codes\INFOMOV\template\</FILEPATH>
+      <FILENAME>tmplmath.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 Tmpl8::uint4::&lt;unnamed-tag&gt;::cell。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>Tmpl8::uint4::{ctor}</FUNCTION>
+    <DECORATED>??0uint4@Tmpl8@@QEAA@AEBUuint3@1@I@Z</DECORATED>
+    <FUNCLINE>108</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Tmpl8::uint4::&lt;unnamed-tag&gt;::cell</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

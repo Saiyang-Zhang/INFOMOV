@@ -1,0 +1,1721 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int2::{ctor}",
+                  "decoratedName": "??0int2@Tmpl8@@QEAA@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 2,
+                  "endLine": 14,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int2::{ctor}",
+                  "decoratedName": "??0int2@Tmpl8@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 2,
+                  "endLine": 21,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint2::{ctor}",
+                  "decoratedName": "??0uint2@Tmpl8@@QEAA@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 2,
+                  "endLine": 22,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint2::{ctor}",
+                  "decoratedName": "??0uint2@Tmpl8@@QEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 2,
+                  "endLine": 29,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float2::{ctor}",
+                  "decoratedName": "??0float2@Tmpl8@@QEAA@MM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 2,
+                  "endLine": 30,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float2::{ctor}",
+                  "decoratedName": "??0float2@Tmpl8@@QEAA@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float2::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float2::{ctor}",
+                  "decoratedName": "??0float2@Tmpl8@@QEAA@Uint2@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float2::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 2,
+                  "endLine": 39,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int4::{ctor}",
+                  "decoratedName": "??0int4@Tmpl8@@QEAA@HHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 2,
+                  "endLine": 40,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int4::{ctor}",
+                  "decoratedName": "??0int4@Tmpl8@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int3::<unnamed-tag>::<unnamed-tag>::dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 2,
+                  "endLine": 48,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int3::{ctor}",
+                  "decoratedName": "??0int3@Tmpl8@@QEAA@HHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int3::<unnamed-tag>::<unnamed-tag>::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 2,
+                  "endLine": 48,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int3::{ctor}",
+                  "decoratedName": "??0int3@Tmpl8@@QEAA@HHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int3::<unnamed-tag>::<unnamed-tag>::dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 2,
+                  "endLine": 49,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int3::{ctor}",
+                  "decoratedName": "??0int3@Tmpl8@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int3::<unnamed-tag>::<unnamed-tag>::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 2,
+                  "endLine": 49,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int3::{ctor}",
+                  "decoratedName": "??0int3@Tmpl8@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int3::<unnamed-tag>::<unnamed-tag>::dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 2,
+                  "endLine": 50,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int3::{ctor}",
+                  "decoratedName": "??0int3@Tmpl8@@QEAA@Uint4@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int3::<unnamed-tag>::<unnamed-tag>::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::int3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 2,
+                  "endLine": 50,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::int3::{ctor}",
+                  "decoratedName": "??0int3@Tmpl8@@QEAA@Uint4@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::int3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 2,
+                  "endLine": 58,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint4::{ctor}",
+                  "decoratedName": "??0uint4@Tmpl8@@QEAA@IIII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2,
+                  "endLine": 59,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint4::{ctor}",
+                  "decoratedName": "??0uint4@Tmpl8@@QEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint3::<unnamed-tag>::<unnamed-tag>::dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 2,
+                  "endLine": 67,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint3::{ctor}",
+                  "decoratedName": "??0uint3@Tmpl8@@QEAA@III@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint3::<unnamed-tag>::<unnamed-tag>::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 2,
+                  "endLine": 67,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint3::{ctor}",
+                  "decoratedName": "??0uint3@Tmpl8@@QEAA@III@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint3::<unnamed-tag>::<unnamed-tag>::dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 2,
+                  "endLine": 68,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint3::{ctor}",
+                  "decoratedName": "??0uint3@Tmpl8@@QEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint3::<unnamed-tag>::<unnamed-tag>::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 2,
+                  "endLine": 68,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint3::{ctor}",
+                  "decoratedName": "??0uint3@Tmpl8@@QEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint3::<unnamed-tag>::<unnamed-tag>::dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 2,
+                  "endLine": 69,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint3::{ctor}",
+                  "decoratedName": "??0uint3@Tmpl8@@QEAA@Uuint4@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint3::<unnamed-tag>::<unnamed-tag>::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uint3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 2,
+                  "endLine": 69,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uint3::{ctor}",
+                  "decoratedName": "??0uint3@Tmpl8@@QEAA@Uuint4@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uint3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 2,
+                  "endLine": 77,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float4::{ctor}",
+                  "decoratedName": "??0float4@Tmpl8@@QEAA@MMMM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 2,
+                  "endLine": 78,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float4::{ctor}",
+                  "decoratedName": "??0float4@Tmpl8@@QEAA@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 2,
+                  "endLine": 87,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float3::{ctor}",
+                  "decoratedName": "??0float3@Tmpl8@@QEAA@MMM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 2,
+                  "endLine": 88,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float3::{ctor}",
+                  "decoratedName": "??0float3@Tmpl8@@QEAA@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 2,
+                  "endLine": 89,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float3::{ctor}",
+                  "decoratedName": "??0float3@Tmpl8@@QEAA@Ufloat4@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::float3::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 2,
+                  "endLine": 90,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::float3::{ctor}",
+                  "decoratedName": "??0float3@Tmpl8@@QEAA@Uuint3@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::float3::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uchar4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 2,
+                  "endLine": 99,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uchar4::{ctor}",
+                  "decoratedName": "??0uchar4@Tmpl8@@QEAA@EEEE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uchar4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Tmpl8::uchar4::<unnamed-tag>::cell。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 2,
+                  "endLine": 100,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::uchar4::{ctor}",
+                  "decoratedName": "??0uchar4@Tmpl8@@QEAA@E@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Tmpl8::uchar4::<unnamed-tag>::cell"
+          }
+        },
+        {
+          "ruleId": "C28251",
+          "message": {
+            "text": "“fminf”的批注不一致: 此实例包含 无批注。请参见 d:\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_math.h(563)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 14,
+                  "endLine": 121,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fminf",
+                  "decoratedName": "fminf",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28251",
+          "message": {
+            "text": "“fmaxf”的批注不一致: 此实例包含 无批注。请参见 d:\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_math.h(562)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 14,
+                  "endLine": 122,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmaxf",
+                  "decoratedName": "fmaxf",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Buffer::textureID。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Buffer::{ctor}",
+                  "decoratedName": "??0Buffer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Buffer::textureID"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Buffer::size。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Buffer::{ctor}",
+                  "decoratedName": "??0Buffer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Buffer::size"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Buffer::aligned。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Buffer::{ctor}",
+                  "decoratedName": "??0Buffer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Buffer::aligned"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Buffer::ownData。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Buffer::{ctor}",
+                  "decoratedName": "??0Buffer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Buffer::ownData"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Buffer::type。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 2,
+                  "endLine": 13,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Buffer::{ctor}",
+                  "decoratedName": "??0Buffer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Buffer::type"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 JobManager::m_ThreadDone。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 13,
+                  "endLine": 335,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "JobManager::{ctor}",
+                  "decoratedName": "??0JobManager@@IEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "JobManager::m_ThreadDone"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 JobManager::m_JobThreadList。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 13,
+                  "endLine": 335,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "JobManager::{ctor}",
+                  "decoratedName": "??0JobManager@@IEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "JobManager::m_JobThreadList"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 JobManager::m_JobCount。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 13,
+                  "endLine": 335,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "JobManager::{ctor}",
+                  "decoratedName": "??0JobManager@@IEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "JobManager::m_JobCount"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 JobManager::m_JobList。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 13,
+                  "endLine": 335,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "JobManager::{ctor}",
+                  "decoratedName": "??0JobManager@@IEAA@I@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "JobManager::m_JobList"
+          }
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“pi”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                },
+                "region": {
+                  "startLine": 409,
+                  "startColumn": 10,
+                  "endLine": 409,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "JobManager::GetProcessorCount",
+                  "decoratedName": "?GetProcessorCount@JobManager@@SAXAEAI0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 394,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 395,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 396,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 397,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 399,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 401,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 402,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 404,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 405,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 406,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 408,
+                            "startColumn": 47
+                          }
+                        },
+                        "message": {
+                          "text": "“pi”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 409,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+                          },
+                          "region": {
+                            "startLine": 409,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“pi”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/tmplmath.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "561a6fc2fdd6f1719f6281ecd867ef6efe01c4cc4baeaddb23da17e0e08b5bfd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "2e1f8bc123fc823a419bf2799445e83ba8223272f3641c6c26f899da1b42a041"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/template.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "abeeb6a996edf6bc8c96780e2d812036b69494ef63b0122e531af32bd7cf1eed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/precomp.h"
+          },
+          "hashes": {
+            "sha-256": "d5aaae8caada36a016d1fa439766ea955a5e218a72e71c3dde26be83844b799d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/surface.h"
+          },
+          "hashes": {
+            "sha-256": "afa4d957aac2b3730cb86f1fc72973c749df7b4806f2da30d5c652cdf1c7672a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "c0954f97b61dbeef901e2669158dbb1e71431876c31737dc8f80fd156688023f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl.h"
+          },
+          "hashes": {
+            "sha-256": "172e15419bed2d18aecaeb9386b4039c7d9c4f33c66f5f2c1b8351032c1258d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_platform.h"
+          },
+          "hashes": {
+            "sha-256": "f0b9c7f2ed071d3d938e7d835a8342801b3f254337ff2469057558b1217651ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_gl_ext.h"
+          },
+          "hashes": {
+            "sha-256": "f78daff69ebb3c743acf2e1408b6807aa9b20866a9dd9b804c46c7924138ac50"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_gl.h"
+          },
+          "hashes": {
+            "sha-256": "151617724987e030736292aa3b61969b4d214f529e0ff6c327eb280202399e81"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glad/glad.h"
+          },
+          "hashes": {
+            "sha-256": "8a6f0bfa8a788ce25ab5d68b7d387f4c9e1f414e9e07db03f34a520cbdbb37a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glad/khrplatform.h"
+          },
+          "hashes": {
+            "sha-256": "5ee5d5c2c6b2abd028cec8dc1a24e995bb47b075654a6fc55f3a1293de36943f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glfw/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "5bf391bd940ff6644746857eafa442f150e3fe01a0dc010a444d766fccfce4a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glfw/include/glfw/glfw3native.h"
+          },
+          "hashes": {
+            "sha-256": "dd6b99d312bbaa4d58e33f05634211e6cae2ccf6a7a30d4b070d5c2533ca7542"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/zlib/zlib.h"
+          },
+          "hashes": {
+            "sha-256": "86c26fd89560f7c2d9ee7852cacdbc7c8334c3090a6e18e366e7618351a0dbf9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/zlib/zconf.h"
+          },
+          "hashes": {
+            "sha-256": "7f4e7f02c4c1b7ef830a8b4331e1ba04f34e97f2c0dcdd81f967ff16fd5ee6d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/opengl.h"
+          },
+          "hashes": {
+            "sha-256": "7af3930e37d5e6c3bfd4d81ebd8a9935e122330d178bd9caecdc2532688feb86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/common.h"
+          },
+          "hashes": {
+            "sha-256": "4e6fd7b09b3d49be00bb57ebe45f004c855f9baa72e453b8c7ad12c14e6ed368"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/game.h"
+          },
+          "hashes": {
+            "sha-256": "e65a9fb8508a28b8f818602a58ce550402cb010b4869bfb81102fd9a1ac475e3"
+          }
+        }
+      ]
+    }
+  ]
+}

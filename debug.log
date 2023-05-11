@@ -1,0 +1,70 @@
+[0511/134126.262:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.585:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.587:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.603:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.629:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.638:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.662:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.679:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.680:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.686:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.687:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.700:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134126.717:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134128.322:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134139.894:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.220:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.222:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.232:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.242:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.253:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.261:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.292:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.313:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.318:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134140.326:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134141.071:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134228.773:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134230.327:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134230.581:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134240.530:INFO:CONSOLE(1)] "Popup: Popup does not fit within the boundaries of the viewport [object HTMLDivElement]", source: https://127.0.0.1:51996/vendor-625246.js (1)
+[0511/134310.329:ERROR:gpu_init.cc(453)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0511/134351.680:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134351.826:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134351.835:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134351.882:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134352.266:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134352.275:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134352.441:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134413.020:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134413.626:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134413.629:ERROR:ssl_client_socket_impl.cc(981)] handshake failed; returned -1, SSL error code 1, net_error -202
+[0511/134554.019:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.041:INFO:CONSOLE(2)] "Failed to send log TypeError: Failed to fetch", source: https://127.0.0.1:51996/intel.analyzers.vtune.gui.js (2)
+[0511/134554.638:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=1073807364
+[0511/134554.638:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 1 time(s)
+[0511/134554.641:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.678:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.678:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 2 time(s)
+[0511/134554.688:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.718:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.718:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 3 time(s)
+[0511/134554.731:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.756:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.756:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 4 time(s)
+[0511/134554.768:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.789:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.789:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 5 time(s)
+[0511/134554.799:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.818:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.818:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 6 time(s)
+[0511/134554.834:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.851:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.851:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 7 time(s)
+[0511/134554.866:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.882:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.882:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 8 time(s)
+[0511/134554.895:ERROR:network_service_instance_impl.cc(333)] Network service crashed, restarting service.
+[0511/134554.915:ERROR:gpu_process_host.cc(956)] GPU process exited unexpectedly: exit_code=-1073741205
+[0511/134554.915:WARNING:gpu_process_host.cc(1269)] The GPU process has crashed 9 time(s)
+[0511/134554.915:FATAL:gpu_data_manager_impl_private.cc(417)] GPU process isn't usable. Goodbye.

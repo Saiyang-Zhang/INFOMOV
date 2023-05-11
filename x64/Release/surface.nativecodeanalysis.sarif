@@ -1,0 +1,3375 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1048,
+                  "startColumn": 24,
+                  "endLine": 1048,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad2",
+                  "decoratedName": "?stbi__malloc_mad2@@YAPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1048,
+                  "startColumn": 24,
+                  "endLine": 1048,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad2",
+                  "decoratedName": "?stbi__malloc_mad2@@YAPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1055,
+                  "startColumn": 24,
+                  "endLine": 1055,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad3",
+                  "decoratedName": "?stbi__malloc_mad3@@YAPEAXHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1055,
+                  "startColumn": 24,
+                  "endLine": 1055,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad3",
+                  "decoratedName": "?stbi__malloc_mad3@@YAPEAXHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1055,
+                  "startColumn": 24,
+                  "endLine": 1055,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad3",
+                  "decoratedName": "?stbi__malloc_mad3@@YAPEAXHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1062,
+                  "startColumn": 24,
+                  "endLine": 1062,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad4",
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1062,
+                  "startColumn": 24,
+                  "endLine": 1062,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad4",
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1062,
+                  "startColumn": 24,
+                  "endLine": 1062,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad4",
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1062,
+                  "startColumn": 24,
+                  "endLine": 1062,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__malloc_mad4",
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1192,
+                  "startColumn": 45,
+                  "endLine": 1192,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_8_to_16",
+                  "decoratedName": "?stbi__convert_8_to_16@@YAPEAGPEAEHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1211,
+                  "startColumn": 32,
+                  "endLine": 1211,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__vertical_flip",
+                  "decoratedName": "?stbi__vertical_flip@@YAXPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1211,
+                  "startColumn": 32,
+                  "endLine": 1211,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__vertical_flip",
+                  "decoratedName": "?stbi__vertical_flip@@YAXPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1750,
+                  "startColumn": 36,
+                  "endLine": 1750,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format",
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1750,
+                  "startColumn": 36,
+                  "endLine": 1750,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format",
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1751,
+                  "startColumn": 36,
+                  "endLine": 1751,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format",
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1751,
+                  "startColumn": 36,
+                  "endLine": 1751,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format",
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1800,
+                  "startColumn": 41,
+                  "endLine": 1800,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1800,
+                  "startColumn": 41,
+                  "endLine": 1800,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1800,
+                  "startColumn": 41,
+                  "endLine": 1800,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1807,
+                  "startColumn": 35,
+                  "endLine": 1807,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1807,
+                  "startColumn": 35,
+                  "endLine": 1807,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1808,
+                  "startColumn": 35,
+                  "endLine": 1808,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1808,
+                  "startColumn": 35,
+                  "endLine": 1808,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__convert_format16",
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2988,
+                  "startColumn": 53,
+                  "endLine": 2988,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__parse_entropy_coded_data",
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3019,
+                  "startColumn": 62,
+                  "endLine": 3019,
+                  "endColumn": 92
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__parse_entropy_coded_data",
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2933,
+                  "startColumn": 57,
+                  "endLine": 2933,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__parse_entropy_coded_data",
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2933,
+                  "startColumn": 57,
+                  "endLine": 2933,
+                  "endColumn": 75
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__parse_entropy_coded_data",
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2933,
+                  "startColumn": 79,
+                  "endLine": 2933,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__parse_entropy_coded_data",
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2961,
+                  "startColumn": 66,
+                  "endLine": 2961,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__parse_entropy_coded_data",
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3056,
+                  "startColumn": 53,
+                  "endLine": 3056,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__jpeg_finish",
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3058,
+                  "startColumn": 57,
+                  "endLine": 3058,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__jpeg_finish",
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3058,
+                  "startColumn": 57,
+                  "endLine": 3058,
+                  "endColumn": 75
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__jpeg_finish",
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3058,
+                  "startColumn": 79,
+                  "endLine": 3058,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__jpeg_finish",
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3533,
+                  "startColumn": 43,
+                  "endLine": 3533,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__resample_row_hv_2_simd",
+                  "decoratedName": "?stbi__resample_row_hv_2_simd@@YAPEAEPEAE00HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3850,
+                  "startColumn": 60,
+                  "endLine": 3850,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "load_jpeg_image",
+                  "decoratedName": "?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3873,
+                  "startColumn": 34,
+                  "endLine": 3873,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "load_jpeg_image",
+                  "decoratedName": "?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3873,
+                  "startColumn": 34,
+                  "endLine": 3873,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "load_jpeg_image",
+                  "decoratedName": "?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4621,
+                  "startColumn": 31,
+                  "endLine": 4621,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4630,
+                  "startColumn": 17,
+                  "endLine": 4630,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4710,
+                  "startColumn": 28,
+                  "endLine": 4710,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4723,
+                  "startColumn": 34,
+                  "endLine": 4723,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4724,
+                  "startColumn": 34,
+                  "endLine": 4724,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4724,
+                  "startColumn": 45,
+                  "endLine": 4724,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4773,
+                  "startColumn": 28,
+                  "endLine": 4773,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image_raw",
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4837,
+                  "startColumn": 31,
+                  "endLine": 4837,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image",
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4837,
+                  "startColumn": 31,
+                  "endLine": 4837,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image",
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4837,
+                  "startColumn": 61,
+                  "endLine": 4837,
+                  "endColumn": 67
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image",
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4838,
+                  "startColumn": 33,
+                  "endLine": 4838,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image",
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4838,
+                  "startColumn": 33,
+                  "endLine": 4838,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image",
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4838,
+                  "startColumn": 33,
+                  "endLine": 4838,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__create_png_image",
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5637,
+                  "startColumn": 35,
+                  "endLine": 5637,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__bmp_load",
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5637,
+                  "startColumn": 35,
+                  "endLine": 5637,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__bmp_load",
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5638,
+                  "startColumn": 31,
+                  "endLine": 5638,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__bmp_load",
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5638,
+                  "startColumn": 31,
+                  "endLine": 5638,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__bmp_load",
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5638,
+                  "startColumn": 31,
+                  "endLine": 5638,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__bmp_load",
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "switch 标签之间的尾随 fallthrough (es.78)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5669,
+                  "startColumn": 12,
+                  "endLine": 5669,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__tga_get_comp",
+                  "decoratedName": "?stbi__tga_get_comp@@YAHHHPEAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5858,
+                  "startColumn": 40,
+                  "endLine": 5858,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__tga_load",
+                  "decoratedName": "?stbi__tga_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5858,
+                  "startColumn": 40,
+                  "endLine": 5858,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__tga_load",
+                  "decoratedName": "?stbi__tga_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6715,
+                  "startColumn": 41,
+                  "endLine": 6715,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6716,
+                  "startColumn": 48,
+                  "endLine": 6716,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6724,
+                  "startColumn": 28,
+                  "endLine": 6724,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6725,
+                  "startColumn": 35,
+                  "endLine": 6725,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6758,
+                  "startColumn": 38,
+                  "endLine": 6758,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6758,
+                  "startColumn": 38,
+                  "endLine": 6758,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6762,
+                  "startColumn": 30,
+                  "endLine": 6762,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load_next",
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "函数使用堆叠的 \"35036\" 字节。请考虑将一些数据移动到堆。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6885,
+                  "startColumn": 14,
+                  "endLine": 6885,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__load_gif_main",
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6916,
+                  "startColumn": 39,
+                  "endLine": 6916,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__load_gif_main",
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6932,
+                  "startColumn": 46,
+                  "endLine": 6932,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__load_gif_main",
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6943,
+                  "startColumn": 29,
+                  "endLine": 6943,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__load_gif_main",
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6943,
+                  "startColumn": 29,
+                  "endLine": 6943,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__load_gif_main",
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6945,
+                  "startColumn": 33,
+                  "endLine": 6945,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__load_gif_main",
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "函数使用堆叠的 \"34980\" 字节。请考虑将一些数据移动到堆。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6970,
+                  "startColumn": 14,
+                  "endLine": 6970,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__gif_load",
+                  "decoratedName": "?stbi__gif_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "switch 标签之间的尾随 fallthrough (es.78)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7071,
+                  "startColumn": 15,
+                  "endLine": 7071,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_convert",
+                  "decoratedName": "?stbi__hdr_convert@@YAXPEAMPEAEH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "switch 标签之间的尾随 fallthrough (es.78)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7074,
+                  "startColumn": 15,
+                  "endLine": 7074,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_convert",
+                  "decoratedName": "?stbi__hdr_convert@@YAXPEAMPEAEH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7145,
+                  "startColumn": 42,
+                  "endLine": 7145,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7145,
+                  "startColumn": 42,
+                  "endLine": 7145,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7145,
+                  "startColumn": 65,
+                  "endLine": 7145,
+                  "endColumn": 69
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7202,
+                  "startColumn": 41,
+                  "endLine": 7202,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7202,
+                  "startColumn": 41,
+                  "endLine": 7202,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7202,
+                  "startColumn": 41,
+                  "endLine": 7202,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7202,
+                  "startColumn": 75,
+                  "endLine": 7202,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "stbi__hdr_load",
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 18,
+                  "endLine": 25,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::{ctor}",
+                  "decoratedName": "??0Surface@Tmpl8@@QEAA@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 18,
+                  "endLine": 25,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::{ctor}",
+                  "decoratedName": "??0Surface@Tmpl8@@QEAA@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"f\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 2,
+                  "endLine": 32,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::{ctor}",
+                  "decoratedName": "??0Surface@Tmpl8@@QEAA@PEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 46
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 58
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 71
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.h"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 30,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“f”可能为 NULL (进入此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“f”是对“fclose”的输入(在 d:\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h:152 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“f”不应为 NULL，因为这与“fclose”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“pixels”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 32,
+                  "endLine": 55,
+                  "endColumn": 109
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::LoadFromFile",
+                  "decoratedName": "?LoadFromFile@Surface@Tmpl8@@QEAAXPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 40,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“pixels”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 43,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“n==1”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<s”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 42
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“pixels”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入 \"pixels\" 时缓冲区溢出。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 32,
+                  "endLine": 55,
+                  "endColumn": 109
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::LoadFromFile",
+                  "decoratedName": "?LoadFromFile@Surface@Tmpl8@@QEAAXPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 40,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“data”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 43,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“n==1”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<s”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "“i”可能等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“i<s”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 42
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“pixels”无效(位于其可写范围之外)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 19,
+                  "endLine": 42,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::LoadFromFile",
+                  "decoratedName": "?LoadFromFile@Surface@Tmpl8@@QEAAXPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 19,
+                  "endLine": 42,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::LoadFromFile",
+                  "decoratedName": "?LoadFromFile@Surface@Tmpl8@@QEAAXPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 12,
+                  "endLine": 94,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::Bar",
+                  "decoratedName": "?Bar@Surface@Tmpl8@@QEAAXHHHHI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 26,
+                  "endLine": 109,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::Print",
+                  "decoratedName": "?Print@Surface@Tmpl8@@QEAAXPEBDHHI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 24,
+                  "endLine": 155,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::Line",
+                  "decoratedName": "?Line@Surface@Tmpl8@@QEAAXMMMMI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 21,
+                  "endLine": 173,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::CopyTo",
+                  "decoratedName": "?CopyTo@Surface@Tmpl8@@QEAAXPEAV12@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 11,
+                  "endLine": 176,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::CopyTo",
+                  "decoratedName": "?CopyTo@Surface@Tmpl8@@QEAAXPEAV12@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+                },
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 23,
+                  "endLine": 179,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Tmpl8::Surface::CopyTo",
+                  "decoratedName": "?CopyTo@Surface@Tmpl8@@QEAAXPEAV12@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/lib/stb_image.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0210e873cde9bbc7c3c499d0c34100048e0756d4a85c4456deb5e83c5a0bb841"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "556086f4c857f2f0f2aad1ff1571fe6ae8b08ef22a3801e45e303cd810321439"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/surface.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "afa4d957aac2b3730cb86f1fc72973c749df7b4806f2da30d5c652cdf1c7672a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/precomp.h"
+          },
+          "hashes": {
+            "sha-256": "d5aaae8caada36a016d1fa439766ea955a5e218a72e71c3dde26be83844b799d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/tmplmath.h"
+          },
+          "hashes": {
+            "sha-256": "561a6fc2fdd6f1719f6281ecd867ef6efe01c4cc4baeaddb23da17e0e08b5bfd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "c0954f97b61dbeef901e2669158dbb1e71431876c31737dc8f80fd156688023f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl.h"
+          },
+          "hashes": {
+            "sha-256": "172e15419bed2d18aecaeb9386b4039c7d9c4f33c66f5f2c1b8351032c1258d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_platform.h"
+          },
+          "hashes": {
+            "sha-256": "f0b9c7f2ed071d3d938e7d835a8342801b3f254337ff2469057558b1217651ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_gl_ext.h"
+          },
+          "hashes": {
+            "sha-256": "f78daff69ebb3c743acf2e1408b6807aa9b20866a9dd9b804c46c7924138ac50"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_gl.h"
+          },
+          "hashes": {
+            "sha-256": "151617724987e030736292aa3b61969b4d214f529e0ff6c327eb280202399e81"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glad/glad.h"
+          },
+          "hashes": {
+            "sha-256": "8a6f0bfa8a788ce25ab5d68b7d387f4c9e1f414e9e07db03f34a520cbdbb37a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glad/khrplatform.h"
+          },
+          "hashes": {
+            "sha-256": "5ee5d5c2c6b2abd028cec8dc1a24e995bb47b075654a6fc55f3a1293de36943f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glfw/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "5bf391bd940ff6644746857eafa442f150e3fe01a0dc010a444d766fccfce4a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glfw/include/glfw/glfw3native.h"
+          },
+          "hashes": {
+            "sha-256": "dd6b99d312bbaa4d58e33f05634211e6cae2ccf6a7a30d4b070d5c2533ca7542"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/zlib/zlib.h"
+          },
+          "hashes": {
+            "sha-256": "86c26fd89560f7c2d9ee7852cacdbc7c8334c3090a6e18e366e7618351a0dbf9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/zlib/zconf.h"
+          },
+          "hashes": {
+            "sha-256": "7f4e7f02c4c1b7ef830a8b4331e1ba04f34e97f2c0dcdd81f967ff16fd5ee6d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/opencl.h"
+          },
+          "hashes": {
+            "sha-256": "2e1f8bc123fc823a419bf2799445e83ba8223272f3641c6c26f899da1b42a041"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/opengl.h"
+          },
+          "hashes": {
+            "sha-256": "7af3930e37d5e6c3bfd4d81ebd8a9935e122330d178bd9caecdc2532688feb86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/common.h"
+          },
+          "hashes": {
+            "sha-256": "4e6fd7b09b3d49be00bb57ebe45f004c855f9baa72e453b8c7ad12c14e6ed368"
+          }
+        }
+      ]
+    }
+  ]
+}

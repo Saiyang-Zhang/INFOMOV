@@ -1,0 +1,1715 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "函数使用堆叠的 \"16400\" 字节。请考虑将一些数据移动到堆。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 6,
+                  "endLine": 22,
+                  "endColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FatalError",
+                  "decoratedName": "?FatalError@@YAXPEBDZZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“devices”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 15,
+                  "endLine": 110,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getFirstDevice",
+                  "decoratedName": "?getFirstDevice@@YAPEAU_cl_device_id@@PEAU_cl_context@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 105,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 106,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 107,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 108,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“devices”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 109,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "“devices”是“clGetContextInfo”的输入/输出参数(在 d:\\zsyblah\\documents\\codes\\infomov\\lib\\opencl\\inc\\cl\\cl.h:703 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 110,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“devices”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“clPlatformIDs”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 3,
+                  "endLine": 133,
+                  "endColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getPlatformID",
+                  "decoratedName": "?getPlatformID@@YAHPEAPEAU_cl_platform_id@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 120,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 120,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 121,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 122,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 123,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 124,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "“clPlatformIDs”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“clPlatformIDs”是“clGetPlatformIDs”的输入/输出参数(在 d:\\zsyblah\\documents\\codes\\infomov\\lib\\opencl\\inc\\cl\\cl.h:641 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<num_platforms”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 133,
+                            "startColumn": 3
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“clPlatformIDs”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6054",
+          "message": {
+            "text": "可能没有为字符串“chBuffer”添加字符串零终止符。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 33,
+                  "endLine": 141,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getPlatformID",
+                  "decoratedName": "?getPlatformID@@YAHPEAPEAU_cl_platform_id@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "此表达式不能为“chBuffer”添加字符串零终止符"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 120,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 120,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 121,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 122,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 123,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 124,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“num_platforms==0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<num_platforms”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 133,
+                            "startColumn": 3
+                          }
+                        },
+                        "message": {
+                          "text": "“chBuffer”是“clGetPlatformInfo”中的输出(在 d:\\zsyblah\\documents\\codes\\infomov\\lib\\opencl\\inc\\cl\\cl.h:646 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "“chBuffer”是“printf”中的输出(在 d:\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h:950 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "退出此循环(“i<num_platforms”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<2”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 52
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“k<3”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 84
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<num_platforms”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 138,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 139,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“((error!=0))||((devCount==0))”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 140,
+                            "startColumn": 3
+                          }
+                        },
+                        "message": {
+                          "text": "“chBuffer”是“clGetPlatformInfo”中的输出(在 d:\\zsyblah\\documents\\codes\\infomov\\lib\\opencl\\inc\\cl\\cl.h:646 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 141,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“deviceOrder[j][k][0]”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 141,
+                            "startColumn": 33
+                          }
+                        },
+                        "message": {
+                          "text": "“chBuffer”是对“strstr”的输入(在 d:\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\string.h:518 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 141,
+                            "startColumn": 33
+                          }
+                        },
+                        "message": {
+                          "text": "“chBuffer”必须由“strstr”上的 SAL 批注添加字符串零终止符"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Buffer::size。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 9,
+                  "endLine": 152,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Buffer::{ctor}",
+                  "decoratedName": "??0Buffer@@QEAA@IPEAXI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Buffer::size"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Kernel::{ctor}::Include::end。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 48,
+                  "endLine": 262,
+                  "endColumn": 48
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kernel::{ctor}::Include::{ctor}",
+                  "decoratedName": "??0Include@?1???0Kernel@@QEAA@PEAD0@Z@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Kernel::{ctor}::Include::end"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Kernel::{ctor}::Include::start。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 48,
+                  "endLine": 262,
+                  "endColumn": 48
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kernel::{ctor}::Include::{ctor}",
+                  "decoratedName": "??0Include@?1???0Kernel@@QEAA@PEAD0@Z@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Kernel::{ctor}::Include::start"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 Kernel::vbo_cl。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 9,
+                  "endLine": 245,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kernel::{ctor}",
+                  "decoratedName": "??0Kernel@@QEAA@PEAD0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Kernel::vbo_cl"
+          }
+        },
+        {
+          "ruleId": "C6283",
+          "message": {
+            "text": "“devices”使用数组 new [] 分配，但使用标量 delete 删除。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 573,
+                  "startColumn": 9,
+                  "endLine": 573,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kernel::InitCL",
+                  "decoratedName": "?InitCL@Kernel@@SA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 432,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 573,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"extensions\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                },
+                "region": {
+                  "startLine": 447,
+                  "startColumn": 11,
+                  "endLine": 447,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kernel::InitCL",
+                  "decoratedName": "?InitCL@Kernel@@SA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 426,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 427,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 428,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 429,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 430,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 431,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 432,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 433,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 434,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 436,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 436,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 437,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 437,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 441,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 442,
+                            "startColumn": 3
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 443,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 445,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“extensions”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 446,
+                            "startColumn": 4
+                          }
+                        },
+                        "message": {
+                          "text": "“extensions”是“clGetDeviceInfo”的输入/输出参数(在 d:\\zsyblah\\documents\\codes\\infomov\\lib\\opencl\\inc\\cl\\cl.h:661 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 447,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“extensions”是对“std::basic_string<char,std::char_traits<char>,std::allocator<char> >::{ctor}”的输入(在 d:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.35.32215\\include\\xstring:2673 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+                          },
+                          "region": {
+                            "startLine": 447,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“extensions”不应为 NULL，因为这与“std::basic_string<char,std::char_traits<char>,std::allocator<char> >::{ctor}”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ZSYblah/Documents/Codes/INFOMOV/template/opencl.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "33a89ba2b74cb2a7ecf0411fff508bf22d4c09f158bf76b1e8cb7161162998c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/precomp.h"
+          },
+          "hashes": {
+            "sha-256": "d5aaae8caada36a016d1fa439766ea955a5e218a72e71c3dde26be83844b799d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/tmplmath.h"
+          },
+          "hashes": {
+            "sha-256": "561a6fc2fdd6f1719f6281ecd867ef6efe01c4cc4baeaddb23da17e0e08b5bfd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/surface.h"
+          },
+          "hashes": {
+            "sha-256": "afa4d957aac2b3730cb86f1fc72973c749df7b4806f2da30d5c652cdf1c7672a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "c0954f97b61dbeef901e2669158dbb1e71431876c31737dc8f80fd156688023f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl.h"
+          },
+          "hashes": {
+            "sha-256": "172e15419bed2d18aecaeb9386b4039c7d9c4f33c66f5f2c1b8351032c1258d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_platform.h"
+          },
+          "hashes": {
+            "sha-256": "f0b9c7f2ed071d3d938e7d835a8342801b3f254337ff2469057558b1217651ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_gl_ext.h"
+          },
+          "hashes": {
+            "sha-256": "f78daff69ebb3c743acf2e1408b6807aa9b20866a9dd9b804c46c7924138ac50"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/opencl/inc/cl/cl_gl.h"
+          },
+          "hashes": {
+            "sha-256": "151617724987e030736292aa3b61969b4d214f529e0ff6c327eb280202399e81"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glad/glad.h"
+          },
+          "hashes": {
+            "sha-256": "8a6f0bfa8a788ce25ab5d68b7d387f4c9e1f414e9e07db03f34a520cbdbb37a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glad/khrplatform.h"
+          },
+          "hashes": {
+            "sha-256": "5ee5d5c2c6b2abd028cec8dc1a24e995bb47b075654a6fc55f3a1293de36943f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glfw/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "5bf391bd940ff6644746857eafa442f150e3fe01a0dc010a444d766fccfce4a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/glfw/include/glfw/glfw3native.h"
+          },
+          "hashes": {
+            "sha-256": "dd6b99d312bbaa4d58e33f05634211e6cae2ccf6a7a30d4b070d5c2533ca7542"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/zlib/zlib.h"
+          },
+          "hashes": {
+            "sha-256": "86c26fd89560f7c2d9ee7852cacdbc7c8334c3090a6e18e366e7618351a0dbf9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/lib/zlib/zconf.h"
+          },
+          "hashes": {
+            "sha-256": "7f4e7f02c4c1b7ef830a8b4331e1ba04f34e97f2c0dcdd81f967ff16fd5ee6d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/opencl.h"
+          },
+          "hashes": {
+            "sha-256": "2e1f8bc123fc823a419bf2799445e83ba8223272f3641c6c26f899da1b42a041"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/opengl.h"
+          },
+          "hashes": {
+            "sha-256": "7af3930e37d5e6c3bfd4d81ebd8a9935e122330d178bd9caecdc2532688feb86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/zsyblah/documents/codes/infomov/template/common.h"
+          },
+          "hashes": {
+            "sha-256": "4e6fd7b09b3d49be00bb57ebe45f004c855f9baa72e453b8c7ad12c14e6ed368"
+          }
+        }
+      ]
+    }
+  ]
+}
