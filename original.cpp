@@ -16,25 +16,6 @@ Surface* reference, *backup;								// surfaces
 int* ref8;													// grayscale image for evaluation
 Timer tm;													// stopwatch
 
-int SCRSIZE;
-int SCRQUADS;
-int BUFFSIZE;
-double inv255;
-double grayTable[256];
-uint clrTable[1024];
-BYTE trace1[1024];
-BYTE trace2[1024];
-int bias[1024];
-
-int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-
 // -----------------------------------------------------------
 // Mutate
 // Randomly modify or replace one line.
@@ -114,125 +95,100 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
     /* Line is not horizontal, diagonal, or vertical */
     unsigned short ErrorAcc = 0;  /* initialize the line error accumulator to 0 */
     
-    BYTE l = GetRValue( clrLine );
-    double grayl = grayTable[l];
-    int offset = 0;
+    BYTE rl = GetRValue( clrLine );
+    BYTE gl = GetGValue( clrLine );
+    BYTE bl = GetBValue( clrLine );
+    double grayl = rl * 0.299 + gl * 0.587 + bl * 0.114;
     
     /* Is this an X-major or Y-major line? */
     if (DeltaY > DeltaX)
     {
-        int iter = gcd(DeltaY, DeltaX);
-        int record = DeltaY / iter;
-        /* Y-major line; calculate 16-bit fixed-point fractional part of a
-        pixel that X advances each time Y advances 1 pixel, truncating the
+    /* Y-major line; calculate 16-bit fixed-point fractional part of a
+    pixel that X advances each time Y advances 1 pixel, truncating the
         result so that we won't overrun the endpoint along the X axis */
         ErrorAdj = ((unsigned long) DeltaX << 16) / (unsigned long) DeltaY;
-        for (int i = 0; i < record; i++) {
+        /* Draw all pixels other than the first and last */
+        while (--DeltaY) {
             ErrorAccTemp = ErrorAcc;   /* remember currrent accumulated error */
             ErrorAcc += ErrorAdj;      /* calculate error for next pixel */
-            bias[i] = 0;
             if (ErrorAcc <= ErrorAccTemp) {
                 /* The error accumulator turned over, so advance the X coord */
                 X0 += XDir;
-                bias[i] = XDir;
             }
             Y0++; /* Y-major, so always advance Y */
-            /* The IntensityBits most significant bits of ErrorAcc give us the
-            intensity weighting for this pixel, and the complement of the
+                  /* The IntensityBits most significant bits of ErrorAcc give us the
+                  intensity weighting for this pixel, and the complement of the
             weighting for the paired pixel */
-            offset += SCRWIDTH;
             Weighting = ErrorAcc >> 8;
-
+            
             COLORREF clrBackGround = screen->pixels[X0 + Y0 * SCRWIDTH];
-            BYTE b = GetRValue(clrBackGround);
-            double grayb = grayTable[b];
-
-            BYTE r = (b > l ? ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (l - b) + b)));
-            screen->Plot(X0, Y0, RGB(r, r, r));
-            trace1[i] = r;
-
+            BYTE rb = GetRValue( clrBackGround );
+            BYTE gb = GetGValue( clrBackGround );
+            BYTE bb = GetBValue( clrBackGround );
+            double grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+            
+            BYTE rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rl - rb ) + rb ) ) );
+            BYTE gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gl - gb ) + gb ) ) );
+            BYTE br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bl - bb ) + bb ) ) );
+            screen->Plot( X0, Y0, RGB( rr, gr, br ) );
+            
             clrBackGround = screen->pixels[X0 + XDir + Y0 * SCRWIDTH];
-            b = GetRValue(clrBackGround);
-            grayb = grayTable[b];
-
-            r = (b > l ? ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (l - b) + b)));
-            screen->Plot(X0 + XDir, Y0, RGB(r, r, r));
-            trace2[i] = r;
+            rb = GetRValue( clrBackGround );
+            gb = GetGValue( clrBackGround );
+            bb = GetBValue( clrBackGround );
+            grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+            
+            rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rl - rb ) + rb ) ) );
+            gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gl - gb ) + gb ) ) );
+            br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bl - bb ) + bb ) ) );
+            screen->Plot( X0 + XDir, Y0, RGB( rr, gr, br ) );
         }
-
-        for ( int i = 1; i < iter; i++) {
-            X0 += XDir;
-            for (int j = 0; j < record; j++) {
-                X0 += bias[j];
-                Y0++; /* Y-major, so always advance Y */
-                /* The IntensityBits most significant bits of ErrorAcc give us the
-                intensity weighting for this pixel, and the complement of the
-                weighting for the paired pixel */
-
-                BYTE r = trace1[j];
-                screen->Plot(X0, Y0, RGB(r, r, r));
-                r = trace2[j];
-                screen->Plot(X0 + XDir, Y0, RGB(r, r, r));
-            }
-        }
-
         /* Draw the final pixel, which is always exactly intersected by the line
         and so needs no weighting */
         screen->Plot( X1, Y1, clrLine );
         return;
     }
-    int iter = gcd(DeltaX, DeltaY);
-    int record = DeltaX / iter;
     /* It's an X-major line; calculate 16-bit fixed-point fractional part of a
     pixel that Y advances each time X advances 1 pixel, truncating the
     result to avoid overrunning the endpoint along the X axis */
     ErrorAdj = ((unsigned long) DeltaY << 16) / (unsigned long) DeltaX;
-    for (int i = 0; i < record; i++) {
+    /* Draw all pixels other than the first and last */
+    while (--DeltaX) {
         ErrorAccTemp = ErrorAcc;   /* remember currrent accumulated error */
         ErrorAcc += ErrorAdj;      /* calculate error for next pixel */
-        bias[i] = 0;
         if (ErrorAcc <= ErrorAccTemp) {
             /* The error accumulator turned over, so advance the Y coord */
             Y0++;
-            bias[i] = 1;
         }
         X0 += XDir; /* X-major, so always advance X */
-        /* The IntensityBits most significant bits of ErrorAcc give us the
-        intensity weighting for this pixel, and the complement of the
+                    /* The IntensityBits most significant bits of ErrorAcc give us the
+                    intensity weighting for this pixel, and the complement of the
         weighting for the paired pixel */
         Weighting = ErrorAcc >> 8;
-
+        
         COLORREF clrBackGround = screen->pixels[X0 + Y0 * SCRWIDTH];
-        BYTE b = GetRValue(clrBackGround);
-        double grayb = grayTable[b];
-
-        BYTE r = (b > l ? ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (l - b) + b)));
-        screen->Plot(X0, Y0, RGB(r, r, r));
-        trace1[i] = r;
-
-        clrBackGround = screen->pixels[X0 + (Y0 + 1) * SCRWIDTH];
-        b = GetRValue(clrBackGround);
-        grayb = grayTable[b];
-
-        r = (b > l ? ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (l - b) + b)));
-        screen->Plot(X0, Y0 + 1, RGB(r, r, r));
-        trace2[i] = r;
-    }
-
-    for (int i = 1; i < iter; i++) {
-        Y0++;
-        for (int j = 0; j < record; j++) {
-            Y0 += bias[j];
-            X0 += XDir; /* X-major, so always advance X */
-            /* The IntensityBits most significant bits of ErrorAcc give us the
-            intensity weighting for this pixel, and the complement of the
-            weighting for the paired pixel */
-
-            BYTE r = trace1[j];
-            screen->Plot(X0, Y0, RGB(r, r, r));
-            r = trace2[j];
-            screen->Plot(X0, Y0 + 1, RGB(r, r, r));
-        }
+        BYTE rb = GetRValue( clrBackGround );
+        BYTE gb = GetGValue( clrBackGround );
+        BYTE bb = GetBValue( clrBackGround );
+        double grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+        
+        BYTE rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( rl - rb ) + rb ) ) );
+        BYTE gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( gl - gb ) + gb ) ) );
+        BYTE br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?Weighting:(Weighting ^ 255)) ) / 255.0 * ( bl - bb ) + bb ) ) );
+        
+        screen->Plot( X0, Y0, RGB( rr, gr, br ) );
+        
+        clrBackGround = screen->pixels[X0 + (Y0 + 1 )* SCRWIDTH];
+        rb = GetRValue( clrBackGround );
+        gb = GetGValue( clrBackGround );
+        bb = GetBValue( clrBackGround );
+        grayb = rb * 0.299 + gb * 0.587 + bb * 0.114;
+        
+        rr = ( rb > rl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rb - rl ) + rl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( rl - rb ) + rb ) ) );
+        gr = ( gb > gl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gb - gl ) + gl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( gl - gb ) + gb ) ) );
+        br = ( bb > bl ? ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bb - bl ) + bl ) ) : ( ( BYTE )( ( ( double )( grayl<grayb?(Weighting ^ 255):Weighting) ) / 255.0 * ( bl - bb ) + bb ) ) );
+        
+        screen->Plot( X0, Y0 + 1, RGB( rr, gr, br ) );
     }
     
     /* Draw the final pixel, which is always exactly intersected by the line
@@ -248,13 +204,14 @@ __int64 Game::Evaluate()
 {
 	// compare to reference using SIMD magic. don't worry about it, it's fast.
 	uint* src = screen->pixels;
-	__m128i* A4 = (__m128i*)src; 
+	const int quads = (SCRWIDTH * SCRHEIGHT) / 4;
+	__m128i* A4 = (__m128i*)src;
 	__m128i* B4 = (__m128i*)ref8;
 	union { __m128i diff4; int diff[4]; };
 	diff4 = _mm_set1_epi32( 0 );
 	union { __m128i mask4; int mask[4]; };
 	mask[0] = mask[1] = mask[2] = mask[3] = 255;
-	for (int i = 0; i < SCRQUADS; i++)
+	for (int i = 0; i < quads; i++)
 	{
 		const __m128i d2 = _mm_abs_epi32( _mm_sub_epi32( _mm_and_si128( A4[i], mask4 ), B4[i] ) );
 		diff4 = _mm_add_epi32( diff4, _mm_srai_epi32( _mm_mul_epi32( d2, d2 ), 12 ) );
@@ -272,17 +229,6 @@ __int64 Game::Evaluate()
 // -----------------------------------------------------------
 void Game::Init()
 {
-    SCRSIZE = SCRWIDTH * SCRHEIGHT;
-    SCRQUADS = SCRSIZE >> 2;
-    BUFFSIZE = SCRSIZE << 2;
-    inv255 = 1.0 / 255;
-    double gray_coeff = 0.299 + 0.587 + 0.114;
-    for (int i = 0; i < 256; i++) grayTable[i] = i * gray_coeff;
-    for (int i = 0; i < LINES; i++) {
-        unsigned int c = i >> 3;
-        clrTable[i] = c + (c << 8) + (c << 16);
-    }
-
 	for (int i = 0; i < LINES; i++) MutateLine( i );
 	FILE* f = fopen( LINEFILE, "rb" );
 	if (f)
@@ -295,8 +241,8 @@ void Game::Init()
 	}
 	Surface* reference = new Surface( "assets/image3.png" );
 	backup = new Surface( SCRWIDTH, SCRHEIGHT );
-	ref8 = (int*)MALLOC64( BUFFSIZE );
-	for (int i = 0; i < SCRSIZE; i++) ref8[i] = reference->pixels[i] & 255;
+	ref8 = (int*)MALLOC64( SCRWIDTH * SCRHEIGHT * 4 );
+	for (int i = 0; i < (SCRWIDTH * SCRHEIGHT); i++) ref8[i] = reference->pixels[i] & 255;
 	fitness = 512 * 512 * 16;
 }
 
@@ -323,26 +269,28 @@ void Game::Tick( float _DT )
 	int lineCount = 0;
 	int iterCount = 0;
 	// draw up to lidx
-	memset( screen->pixels, 255, BUFFSIZE );
+	memset( screen->pixels, 255, SCRWIDTH * SCRHEIGHT * 4 );
 	for (int j = 0; j < lidx; j++, lineCount++)
 	{
-		DrawWuLine( screen, lx1[j], ly1[j], lx2[j], ly2[j], clrTable[j]);
+		unsigned int c = (j * 128) / LINES;
+		DrawWuLine( screen, lx1[j], ly1[j], lx2[j], ly2[j], c + (c << 8) + (c << 16) );
 	}
 	int base = lidx;
 	screen->CopyTo( backup, 0, 0 );
 	// iterate and draw from lidx to end
 	for (int k = 0; k < ITERATIONS; k++)
 	{
-		memcpy( screen->pixels, backup->pixels, BUFFSIZE );
+		memcpy( screen->pixels, backup->pixels, SCRWIDTH * SCRHEIGHT * 4 );
 		MutateLine( lidx );
 		for (int j = base; j < LINES; j++, lineCount++)
 		{
-			DrawWuLine( screen, lx1[j], ly1[j], lx2[j], ly2[j], clrTable[j] );
+			unsigned int c = (j * 128) / LINES;
+			DrawWuLine( screen, lx1[j], ly1[j], lx2[j], ly2[j], c + (c << 8) + (c << 16) );
 		}
 		__int64 diff = Evaluate();
 		if (diff < fitness) fitness = diff; else 
 		UndoMutation( lidx );
-		lidx = (lidx + 1) & 1023;
+		// lidx = (lidx + 1) % LINES;
 		iterCount++;
 	}
 	// stats
