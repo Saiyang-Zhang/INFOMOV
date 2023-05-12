@@ -115,14 +115,19 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
     unsigned short ErrorAcc = 0;  /* initialize the line error accumulator to 0 */
     
     BYTE l = GetRValue( clrLine );
-    double grayl = grayTable[l];
-    int offset = 0;
+    double grayl = grayTable[l], grayb;
+    int offset = Y0 * SCRWIDTH;
+    int iter, record;
+    BYTE r, b;
+    COLORREF clrBackGround;
+    BYTE temp1, temp2;
+    double tempWeight;
     
     /* Is this an X-major or Y-major line? */
     if (DeltaY > DeltaX)
     {
-        int iter = gcd(DeltaY, DeltaX);
-        int record = DeltaY / iter;
+        iter = gcd(DeltaY, DeltaX);
+        record = DeltaY / iter;
         /* Y-major line; calculate 16-bit fixed-point fractional part of a
         pixel that X advances each time Y advances 1 pixel, truncating the
         result so that we won't overrun the endpoint along the X axis */
@@ -143,19 +148,38 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
             offset += SCRWIDTH;
             Weighting = ErrorAcc >> 8;
 
-            COLORREF clrBackGround = screen->pixels[X0 + Y0 * SCRWIDTH];
-            BYTE b = GetRValue(clrBackGround);
-            double grayb = grayTable[b];
-
-            BYTE r = (b > l ? ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (l - b) + b)));
-            screen->Plot(X0, Y0, RGB(r, r, r));
-            trace1[i] = r;
-
-            clrBackGround = screen->pixels[X0 + XDir + Y0 * SCRWIDTH];
+            clrBackGround = screen->pixels[X0 + offset];
             b = GetRValue(clrBackGround);
             grayb = grayTable[b];
 
-            r = (b > l ? ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (l - b) + b)));
+            if (b > l) {
+                temp1 = b;
+                temp2 = l;
+            }
+            else {
+                temp1 = l;
+                temp2 = b;
+            }
+            tempWeight = grayl < grayb ? Weighting : (Weighting ^ 255);
+            r = (BYTE)(tempWeight * inv255 * (temp1 - temp2) + temp2);
+            screen->Plot(X0, Y0, RGB(r, r, r));
+            trace1[i] = r;
+          
+            clrBackGround = screen->pixels[X0 + XDir + offset];
+            b = GetRValue(clrBackGround);
+            grayb = grayTable[b];
+
+            if (b > l) {
+                temp1 = b;
+                temp2 = l;
+            }
+            else {
+                temp1 = l;
+                temp2 = b;
+            }
+            tempWeight = grayl < grayb ? (Weighting ^ 255) : Weighting;
+            r = (BYTE)(tempWeight * inv255 * (temp1 - temp2) + temp2);
+
             screen->Plot(X0 + XDir, Y0, RGB(r, r, r));
             trace2[i] = r;
         }
@@ -169,7 +193,7 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
                 intensity weighting for this pixel, and the complement of the
                 weighting for the paired pixel */
 
-                BYTE r = trace1[j];
+                r = trace1[j];
                 screen->Plot(X0, Y0, RGB(r, r, r));
                 r = trace2[j];
                 screen->Plot(X0 + XDir, Y0, RGB(r, r, r));
@@ -181,8 +205,8 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
         screen->Plot( X1, Y1, clrLine );
         return;
     }
-    int iter = gcd(DeltaX, DeltaY);
-    int record = DeltaX / iter;
+    iter = gcd(DeltaX, DeltaY);
+    record = DeltaX / iter;
     /* It's an X-major line; calculate 16-bit fixed-point fractional part of a
     pixel that Y advances each time X advances 1 pixel, truncating the
     result to avoid overrunning the endpoint along the X axis */
@@ -195,6 +219,7 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
             /* The error accumulator turned over, so advance the Y coord */
             Y0++;
             bias[i] = 1;
+            offset += SCRWIDTH;
         }
         X0 += XDir; /* X-major, so always advance X */
         /* The IntensityBits most significant bits of ErrorAcc give us the
@@ -202,20 +227,36 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
         weighting for the paired pixel */
         Weighting = ErrorAcc >> 8;
 
-        COLORREF clrBackGround = screen->pixels[X0 + Y0 * SCRWIDTH];
-        BYTE b = GetRValue(clrBackGround);
-        double grayb = grayTable[b];
-
-        BYTE r = (b > l ? ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? Weighting : (Weighting ^ 255))) * inv255 * (l - b) + b)));
+        clrBackGround = screen->pixels[X0 + offset];
+        b = GetRValue(clrBackGround);
+        grayb = grayTable[b];
+        if (b > l) {
+            temp1 = b;
+            temp2 = l;
+        }
+        else {
+            temp1 = l;
+            temp2 = b;
+        }
+        tempWeight = grayl < grayb ? Weighting : (Weighting ^ 255);
+        r = (BYTE)(tempWeight * inv255 * (temp1 - temp2) + temp2);
         screen->Plot(X0, Y0, RGB(r, r, r));
         trace1[i] = r;
 
-        clrBackGround = screen->pixels[X0 + (Y0 + 1) * SCRWIDTH];
+        clrBackGround = screen->pixels[X0 + offset + SCRWIDTH];
         b = GetRValue(clrBackGround);
         grayb = grayTable[b];
-
-        r = (b > l ? ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (b - l) + l)) : ((BYTE)(((double)(grayl < grayb ? (Weighting ^ 255) : Weighting)) * inv255 * (l - b) + b)));
-        screen->Plot(X0, Y0 + 1, RGB(r, r, r));
+        if (b > l) {
+            temp1 = b;
+            temp2 = l;
+        }
+        else {
+            temp1 = l;
+            temp2 = b;
+        }
+        tempWeight = grayl < grayb ? (Weighting ^ 255) : Weighting;
+        r = (BYTE)(tempWeight * inv255 * (temp1 - temp2) + temp2); 
+        screen->Plot(X0, Y0 + 1, RGB(r, r, r));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         trace2[i] = r;
     }
 
@@ -228,7 +269,7 @@ void DrawWuLine( Surface *screen, int X0, int Y0, int X1, int Y1, uint clrLine )
             intensity weighting for this pixel, and the complement of the
             weighting for the paired pixel */
 
-            BYTE r = trace1[j];
+            r = trace1[j];
             screen->Plot(X0, Y0, RGB(r, r, r));
             r = trace2[j];
             screen->Plot(X0, Y0 + 1, RGB(r, r, r));
